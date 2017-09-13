@@ -1,0 +1,43 @@
+{
+    "swaggerVersion": "1.2",
+    "apiVersion": "1.0.0",
+    "basePath": "http://localhost:8080",
+    "resourcePath": "/swagger/echoName",
+    "apis": [
+        {
+            "path": "/echo/{name}",
+            "description": "",
+            "operations": [
+                {
+                    "notes": null,
+                    "nickname": "EchoName",
+                    "produces": [
+                        "application/json"
+                    ],
+                    "consumes": [
+                        "application/json"
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 500,
+                            "message": "Internal Server Error"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "name",
+                            "description": null,
+                            "required": true,
+                            "dataType": "String",
+                            "paramType": "path"
+                        }
+                    ],
+                    "summary": "Display Name",
+                    "httpMethod": "GET",
+                    "method": "GET"
+                }
+            ]
+        }
+    ],
+    "models": {}
+}
